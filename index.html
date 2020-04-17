@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Todo App</title>
+	</head>
+	<body>
+		<!-- Main container -->
+		<div class="main-container">
+			<div class="task-form-container">
+				<div class="settings-container">
+					<i class="fas fa-cog" id="setting-icon"></i>
+					<div class="setting-menu hide">
+						<a href="#" class="link" id="task-clear-link">Clear Tasks</a>
+					</div>
+				</div>
+				<div class="msg-container">
+					<p class="msg">This is an error line!</p>
+				</div>
+				<input type="text" id="task-input" />
+				<div class="task-btn-container">
+					<button id="task-add" class="btn">
+						<i class="fas fa-plus"></i> Add
+					</button>
+					<button id="task-search" class="btn">Search</button>
+				</div>
+			</div>
+			<!-- Main task container -->
+			<div class="task-container">
+				<ul class="task-list"></ul>
+			</div>
+		</div>
+
+		<!-- empty card container -->
+		<div class="empty-card">
+			There is no task.
+		</div>
+
+		<!-- task tab -->
+		<div class="task-tab">
+			<a href="#" class="tab selected" id="task">Task</a>
+			<a href="#" class="tab" id="completed">Completed</a>
+			<a href="#" class="tab" id="trash">Trash</a>
+		</div>
+
+		<div class="task-edit-container hide">
+			<form action="#" class="edit-form">
+				<input type="text" />
+				<input type="hidden" id="edit-id" />
+				<button type="submit">Update</button>
+			</form>
+		</div>
+
+		<!-- <script src="ui.js"></script> -->
+		<script src="task.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
